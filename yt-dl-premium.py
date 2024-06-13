@@ -2,7 +2,6 @@ import yt_dlp
 import os
 
 cookies_file = '/home/user/Documents/cookies.txt'
-video_url = 'https://www.youtube.com/watch?v=7X8II6J-6mU'
 output_folder = '/home/user/Videos/yt'
 
 ydl_opts = {
@@ -16,4 +15,5 @@ def download_video(url):
         ydl.download([url])
 
 if __name__ == '__main__':
+    video_url = input("enter the youtube video url > ")
     download_video(video_url)

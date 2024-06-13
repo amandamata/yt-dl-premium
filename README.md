@@ -30,8 +30,7 @@ To download premium content, you need to export your YouTube cookies from your b
 ## Running the Script
 
 1. **Modify the script**:
-    - Open `download_video.py`.
-    - Set the `video_url` variable to the URL of the video you want to download.
+    - Open `yt-dl-premium.py`.
     - Set the `output_folder` variable to the desired output folder path where you want to save the downloaded video.
 
     ```python
@@ -39,7 +38,6 @@ To download premium content, you need to export your YouTube cookies from your b
     import os
 
     cookies_file = 'cookies.txt'
-    video_url = 'URL_OF_THE_VIDEO'
     output_folder = 'path/to/output/folder'
 
     ydl_opts = {
@@ -53,6 +51,7 @@ To download premium content, you need to export your YouTube cookies from your b
             ydl.download([url])
 
     if __name__ == '__main__':
+        video_url = input("enter the youtube video url > ")
         download_video(video_url)
     ```
 
@@ -68,4 +67,3 @@ The video will be downloaded to the specified output folder.
 - Ensure the `cookies.txt` file is in the same directory as the script, or update the `cookies_file` variable to the correct path.
 - Keep the `cookies.txt` file up to date as cookies can expire.
 - Verify the legality and terms of service compliance for downloading content from YouTube.
-
