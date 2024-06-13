@@ -64,6 +64,5 @@ The video will be downloaded to the specified output folder.
 
 ## Notes
 
-- Ensure the `cookies.txt` file is in the same directory as the script, or update the `cookies_file` variable to the correct path.
+- Update the `cookies_file` variable to the correct path.
 - Keep the `cookies.txt` file up to date as cookies can expire.
-- Verify the legality and terms of service compliance for downloading content from YouTube.
